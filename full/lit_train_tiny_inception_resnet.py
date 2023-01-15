@@ -26,8 +26,8 @@ import argparse
 parser = argparse.ArgumentParser(description='Train GazeTracker')
 parser.add_argument('--dataset_dir', default='../dataset/', help='Path to converted dataset')
 parser.add_argument('--epochs', default=50, type=int, help='Number of epochs')
-parser.add_argument('--save_dir', default='../model/google_tiny_resnet_2_SOUP_1/', help='Path store checkpoints')
-parser.add_argument('--comet_name', default='google-tiny-resnet-2-SOUP-1', help='Path store checkpoints')
+parser.add_argument('--save_dir', default='../model/google_tiny_inception_resnet_SOUP_1/', help='Path store checkpoints')
+parser.add_argument('--comet_name', default='google-tiny-inception-resnet-SOUP-1', help='Path store checkpoints')
 parser.add_argument('--gpus', default=1, type=int, help='Number of GPUs to use')
 parser.add_argument('--batch_size', default=256, type=int, help='Batch size')
 parser.add_argument('--checkpoint', default=None, help='Path to load pre trained weights')
@@ -40,7 +40,7 @@ if __name__ == '__main__':
     proj_name = args.comet_name
     checkpoint_callback = ModelCheckpoint(dirpath=args.save_dir, filename='{epoch}-{val_loss:.3f}-{train_loss:.3f}', save_top_k=-1)
     logger = CometLogger(
-        api_key="zQb5zTn15DuSBvVEBjWvs2HzK",
+        api_key="REPLACE WITH API KEY",
         project_name=proj_name,
     )
     

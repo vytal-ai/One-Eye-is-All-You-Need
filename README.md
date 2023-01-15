@@ -10,6 +10,7 @@ This repository contains the code to reproduce the results of our paper _One Eye
 
 - [About the Project](#about-the-project)
 - [Getting Started](#getting-started)
+- [Repository Structure](#repository-structure)
 - [Contact](#issues-and-contact)
 
 <!-- ABOUT THE PROJECT -->
@@ -22,7 +23,17 @@ Many current gaze estimation models not only fail to utilize robust computer vis
 
 ## Getting Started
 
-First, create a Conda environment, and then use the command `conda install --file requirements.txt --file requirements.txt --channel conda-forge --channel comet_ml` in the terminal to install the necessary packages and dependencies for this project. Not all requirements may be on the list, however, so follow the appropriate prompts from your terminal.
+First, create a Conda environment, and then use the command `conda install --file requirements.txt --file requirements.txt --channel conda-forge --channel comet_ml` in the terminal to install the necessary packages and dependencies for this project. Note that this will only install the necessary libraries and dependencies required for this project. Due to the large size of the dataset, you will be unable to run this code on your machine.
+
+<!-- Repository Structure -->
+
+## Repository Structure
+
+| Folder                                               | Description                                                                                                                                                                                          |
+| -------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `full`                                    | Models and training files where both eyes are used in model training.                                                                                     |
+| `one_eye`                                    | Models and training files where only one eye is used in model training.                                                                                       |
+| `utils`                  | Data loading files from the GazeCapture dataset. There are two files, based on what type of data the model requests.                                                               |
 
 <!-- Contact -->
 
