@@ -1,0 +1,8 @@
+pytorch
+pytorch-lightning
+torchvision
+comet_ml
+numpy
+pandas
+pillow
+opencv
