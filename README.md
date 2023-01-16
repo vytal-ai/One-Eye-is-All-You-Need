@@ -23,7 +23,7 @@ Many current gaze estimation models not only fail to utilize robust computer vis
 
 ## Getting Started
 
-First, create a Conda environment, and then use the command `conda install --file requirements.txt --file requirements.txt --channel conda-forge --channel comet_ml` in the terminal to install the necessary packages and dependencies for this project. Note that this will only install the necessary libraries and dependencies required for this project. Due to the large size of the dataset, you will be unable to run this code on your machine.
+First, create a Conda environment, and then use the command `conda install --file requirements.txt --channel conda-forge --channel comet_ml` in the terminal to install the necessary packages and dependencies for this project. Note that this will only install the necessary libraries and dependencies required for this project. Due to the large size of the dataset, you will be unable to run this code on your machine.
 
 <!-- Repository Structure -->
 
